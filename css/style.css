@@ -230,22 +230,44 @@ main */
 .advantage {
   padding-bottom: 0px;
 }
-/* добавляем иконки сверху списка преимуществ с помощью псевдоелемента */
 
 .list-advantage {
   flex-wrap: wrap;
   /* margin-top: 0px;
   margin-bottom: 0px; */
+
+  /* добавляем блоки для иконок сверху списка преимуществ с помощью псевдоелемента */
 }
 .list-advantage > .item::before {
   display: block;
+  margin-bottom: 30px;
+
   content: "";
   height: 120px;
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--gray-bcg-color);
+  border-radius: 4px;
 }
+/* добавляем  иконки сверху списка преимуществ с помощью псевдоелемента */
+.icon-antena::before {
+  padding: 25px 100px;
+  background-image: url(../image/antenna.svg);
+}
+.icon-clock::before {
+  padding: 25px 100px;
+  background-image: url(../image/clock.svg);
+}
+.icon-diagram::before {
+  width: 70px;
+  padding: 25px 100px;
+  background-image: url(../image/diagram.svg);
+}
+.icon-astronaut::before {
+  padding: 25px 100px;
+  background-image: url(../image/astronaut.svg);
+}
+
 .list-advantage .item {
   width: calc((100% - 30px * 3) / 4);
   margin-right: 30px;
