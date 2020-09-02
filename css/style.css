@@ -9,6 +9,7 @@
   --gray-bcg-color: #f5f4fa;
   --border-header: #ececec;
   --border-portfolio: #eeeeee;
+  --overlay: #c4c4c4;
 }
 
 body {
@@ -109,7 +110,6 @@ body {
   padding: 25px 0;
   border-bottom: 1px solid var(--border-header);
 }
-
 .page-header .flexbox {
   align-items: center;
 }
@@ -162,22 +162,42 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
+.site-adr.link::before {
+  content: "";
+}
 /*main*/
 /*style fo rposter section*/
 
-.section-poster {
-  /*poster style*/
-  padding: 200px 0;
-  text-align: center;
-  color: var(--white);
-  background: var(--baner-bcg-color);
-  text-align: center;
+/* .section-poster {
+  padding: 0 150 0 0;
+} */
+.overlay {
+  display: inline-block;
+  max-width: 1600px;
+  height: 600px;
+  padding: 200px 452px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--overlay);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/backgr-poster.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*button style poster section*/
+
 .main-title {
   margin-top: 0px;
+
   margin-bottom: 30px;
+  color: var(--white);
+  align-items: center;
+  text-align: center;
 
   font-weight: 900;
   font-size: 44px;
@@ -199,8 +219,8 @@ body {
   border: 1px solid var(--akcent-color);
   border-radius: 4px;
 
-  align-items: center;
   letter-spacing: 0.06em;
+  align-items: center;
 }
 
 /*style for advantage section*/
@@ -306,7 +326,7 @@ body {
   margin-top: 9px;
   margin-bottom: 0px;
 }
-.adress .paragraph {
+.adress .text {
   margin: 0;
 
   color: var(--white);
@@ -379,14 +399,11 @@ body {
 .list-service .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+
 .servise-container {
   padding: 20px 24px;
 }
 /*portfolio service*/
-.list-service .link {
-  text-decoration: none;
-}
-
 .servise-title {
   margin-top: 0;
   margin-bottom: 4px;
@@ -397,4 +414,7 @@ body {
 .list-service .text {
   font-size: 16px;
   line-height: 1.9;
+}
+.list-service a {
+  text-decoration: none;
 }
