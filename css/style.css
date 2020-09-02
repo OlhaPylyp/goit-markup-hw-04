@@ -249,6 +249,9 @@ main */
   background-color: var(--gray-bcg-color);
   border-radius: 4px;
 }
+.icon-item::before {
+  padding: 25px 100px;
+}
 /* добавляем  иконки сверху списка преимуществ с помощью псевдоелемента */
 .icon-antena::before {
   padding: 25px 100px;
@@ -449,7 +452,4 @@ main */
 .list-service .text {
   font-size: 16px;
   line-height: 1.9;
-}
-.list-service a {
-  text-decoration: none;
 }
