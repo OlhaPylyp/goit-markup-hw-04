@@ -162,22 +162,22 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.site-adr.link::before {
+/* .site-adr.link::before {
   content: "";
 }
-/*main*/
+main */
 /*style fo rposter section*/
 
-/* .section-poster {
-  padding: 0 150 0 0;
-} */
 .overlay {
-  display: inline-block;
-  max-width: 1600px;
-  height: 600px;
+  display: block;
   padding: 200px 452px;
   margin-right: auto;
   margin-left: auto;
+  max-width: 1600px;
+  height: 600px;
+
+  color: var(--white);
+
   background-color: var(--overlay);
   background-image: linear-gradient(
       to right,
@@ -189,15 +189,17 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+.poster {
+  max-width: 696px;
+
+  text-align: center;
+  align-items: center;
+}
 /*button style poster section*/
 
 .main-title {
   margin-top: 0px;
-
   margin-bottom: 30px;
-  color: var(--white);
-  align-items: center;
-  text-align: center;
 
   font-weight: 900;
   font-size: 44px;
@@ -207,11 +209,10 @@ body {
   text-transform: uppercase;
   /* стили для кнопки заказать услугу */
 }
-.button {
+.button-poster {
   padding: 10px 32px;
   min-width: 136px;
   background: var(--akcent-color);
-  color: var(--white);
 
   font-family: inherit;
   font-size: 16px;
@@ -219,19 +220,31 @@ body {
   border: 1px solid var(--akcent-color);
   border-radius: 4px;
 
-  letter-spacing: 0.06em;
+  color: var(--white);
+  text-align: center;
   align-items: center;
+  letter-spacing: 0.06em;
 }
 
 /*style for advantage section*/
 .advantage {
   padding-bottom: 0px;
 }
+/* добавляем иконки сверху списка преимуществ с помощью псевдоелемента */
 
 .list-advantage {
   flex-wrap: wrap;
   /* margin-top: 0px;
   margin-bottom: 0px; */
+}
+.list-advantage > .item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--gray-bcg-color);
 }
 .list-advantage .item {
   width: calc((100% - 30px * 3) / 4);
