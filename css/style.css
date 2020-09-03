@@ -146,22 +146,44 @@ body {
 /* adress header*/
 /*link style*/
 .site-adr {
-  display: flex;
+  align-items: center;
   margin-left: auto;
   letter-spacing: 0.02em;
+
   border: none;
 }
+
 .site-adr .item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .site-adr .link {
-  color: var(--text-color);
-
+  display: inline-flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--text-color);
 }
+
+/* конвертик и телефон возле почты */
+.site-adr .mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--text-color);
+}
+.site-adr .tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--text-color);
+}
+
+.site-adr .link:hover .icon {
+  fill: var(--akcent-color);
+}
+
 /* .site-adr.link::before {
   content: "";
 }
@@ -448,6 +470,7 @@ main */
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  color: var(--title-color);
 }
 .list-service .text {
   font-size: 16px;
