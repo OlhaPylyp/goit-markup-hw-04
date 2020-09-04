@@ -206,10 +206,10 @@ main */
   background-position: center;
 }
 .poster {
-  /* max-width: 696px; */
-
+  display: block;
   text-align: center;
-  align-items: center;
+  width: 696px;
+  height: 120px;
 }
 /*button style poster section*/
 
