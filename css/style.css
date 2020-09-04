@@ -10,6 +10,7 @@
   --border-header: #ececec;
   --border-portfolio: #eeeeee;
   --overlay: #c4c4c4;
+  --social-icon: #afb1b8;
 }
 
 body {
@@ -167,20 +168,12 @@ body {
 }
 
 /* конвертик и телефон возле почты */
-.site-adr .mail {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: var(--text-color);
-}
-.site-adr .tel {
-  width: 10px;
-  height: 16px;
+.site-adr .icon {
   margin-right: 10px;
   fill: var(--text-color);
 }
 
-.site-adr .link:hover .icon {
+.site-adr .item:hover .icon {
   fill: var(--akcent-color);
 }
 
@@ -358,6 +351,33 @@ main */
   line-height: 1.19;
   text-align: center;
 }
+/* style for social link in command */
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+/* style  for link in sosial list */
+.social-link {
+  display: flex;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-link .icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--color4, #fff);
+}
+.social-link:hover .icon,
+.social-link:focus .icon {
+  fill: var(--accent-color);
+}
+
 /*footer*/
 .page-foter {
   background: var(--baner-bcg-color);
