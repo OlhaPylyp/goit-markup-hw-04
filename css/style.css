@@ -184,59 +184,53 @@ body {
 main */
 /*style fo poster section*/
 
-/* .overlay  */
-.poster {
-  padding: 200px 452px;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1600px;
-  min-height: 600px;
-  text-align: center;
-
-  color: var(--white);
-
+.overlay {
   background-color: var(--overlay);
+}
+.poster {
+  max-width: 1600px;
+  height: 600px;
+  padding: 200px 0;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../image/backgr-poster.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-/*button style poster section*/
 
 .main-title {
+  margin-top: 0;
   margin-bottom: 30px;
-
-  margin-top: 0px;
 
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.36;
   letter-spacing: 0.06em;
-
   text-transform: uppercase;
-  /* стили для кнопки заказать услугу */
+  color: var(--white);
 }
 .button-poster {
+  display: inline-block;
   padding: 10px 32px;
-  min-width: 136px;
-  background: var(--akcent-color);
 
-  font-family: inherit;
   font-size: 16px;
-  line-height: 1.9;
-  border: 1px solid var(--akcent-color);
-  border-radius: 4px;
+  line-height: 1.87;
 
-  color: var(--white);
   align-items: center;
   letter-spacing: 0.06em;
-}
+  background-color: var(--akcent-color);
+  color: var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
 
+  text-decoration: none;
+}
 /*style for advantage section*/
 .advantage {
   padding-bottom: 0px;
