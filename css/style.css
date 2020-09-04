@@ -381,7 +381,7 @@ main */
 /* еффекты для списка наши клиенты */
 /* выравнивает по центру */
 
-.client-list .item {
+.client-item {
   display: flex;
   justify-content: center;
 
@@ -391,30 +391,30 @@ main */
   border: 1px solid var(--social-icon);
   border-radius: 4px;
 }
-.client-list .item:not(:last-child) {
+.client-item:not(:last-child) {
   /* убираем марджины у последнего елемента */
   margin-right: 30px;
 }
 
 /* выравниваем иконки по центру*/
-.client-link {
+.client-item .link {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 /* цвет для иконок */
-.client-list .icon {
+.client-item .icon {
   fill: var(--social-icon);
 }
 /* ховер для рамок*/
-.client-list .item:hover,
-.client--list .item:focus {
+.client-item:hover,
+.client-item:focus {
   border-color: var(--akcent-color);
 }
 /* ховер для иконок*/
-.client-link:hover .icon,
-.client-link:focus .icon {
+.client-item:hover .icon,
+.icon .client-item:focus .icon {
   fill: var(--akcent-color);
 }
 /*----------------footer---------------------------*/
@@ -593,7 +593,6 @@ main */
 /* Ховер и фокус для списка по сервису */
 
 .list-service .item:hover {
-  border: 1px solid var(--border-portfolio);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
