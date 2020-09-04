@@ -334,7 +334,7 @@ main */
 }
 /* padding for comands name and profeccion */
 .comander-container {
-  padding: 30px 0;
+  padding: 30px 0 16px;
 }
 
 .comand-list .title {
@@ -355,29 +355,37 @@ main */
 .social {
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
 }
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
+
 /* style  for link in sosial list */
 .social-link {
   display: flex;
   justify-content: center;
-
+  align-items: center;
   width: 44px;
   height: 44px;
+  background: var(--white);
   border-radius: 50%;
 }
-.social-link .icon {
+.social-item .icon {
   width: 20px;
   height: 20px;
-  fill: var(--color4, #fff);
+  fill: var(--social-icon);
 }
+/* еффект ховера для соц сетей фон */
+.social-link:hover,
+.social-link:focus {
+  background: var(--akcent-color);
+}
+/* еффект ховера для соц сетей иконки */
 .social-link:hover .icon,
 .social-link:focus .icon {
-  fill: var(--accent-color);
+  fill: var(--white);
 }
-
 /*footer*/
 .page-foter {
   background: var(--baner-bcg-color);
