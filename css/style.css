@@ -21,6 +21,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
 }
 .container {
@@ -93,7 +94,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+/* ------------------------------------Header-------------------------------------- */
 .logo-web {
   color: var(--akcent-color);
 
@@ -133,7 +134,6 @@ body {
 
   cursor: pointer;
   font-weight: 500;
-  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -163,7 +163,7 @@ body {
   display: inline-flex;
   align-items: center;
   font-weight: 500;
-  line-height: 1.14;
+
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
@@ -182,7 +182,7 @@ body {
   content: "";
 }
 main */
-/*style fo rposter section*/
+/*style fo poster section*/
 
 .overlay {
   display: block;
@@ -292,7 +292,6 @@ main */
 }
 
 .list-advantage .title {
-  line-height: 1.14;
   text-transform: uppercase;
   list-style: none;
 }
@@ -302,9 +301,7 @@ main */
 }
 
 /*style for чем мы занимаемся*/
-.work-list {
-  flex-wrap: flex;
-}
+
 .work-list .item:nth-child(3n) {
   margin-right: 0px;
 }
@@ -364,7 +361,6 @@ main */
   align-items: center;
   width: 44px;
   height: 44px;
-  background: var(--white);
   border-radius: 50%;
 }
 .social-item .icon {
@@ -421,7 +417,8 @@ main */
 .client-link:focus .icon {
   fill: var(--akcent-color);
 }
-/*footer*/
+/*----------------footer---------------------------*/
+
 .page-foter {
   background: var(--baner-bcg-color);
   font-weight: 400;
@@ -430,6 +427,7 @@ main */
 /* описываем контейнер контактов в футере, задаю верхний и нижний падинги*/
 .foter-container {
   padding: 60px 0;
+  margin-right: 82px;
 }
 .logo-foter {
   display: inline-block;
@@ -467,6 +465,59 @@ main */
   cursor: pointer;
 }
 
+/* ---------------колонка с соцсетями в футере----------------- */
+/*позиционирование списков соц сетей */
+.footer-social-container {
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+
+/* стили для заголовка футера*/
+.footer-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  color: var(--white);
+  text-transform: uppercase;
+}
+/* стили для соц сетей футера */
+.footer-social {
+  display: flex;
+}
+.footer-social .item:not(:last-child) {
+  margin-right: 10px;
+}
+/* серый фон кружочка */
+
+/* style  for link in sosial list */
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+
+  border-radius: 50%;
+}
+/* стиль для иконок соц. сетей футера */
+.footer-social .icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--white);
+}
+/* ховер для ссылок соц сетей */
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background: var(--akcent-color);
+}
+/* !!!еффект ховера для иконок соц сетей соц сетей такой же как и усоц.сетей команды, поэтому отдельно не создавала */
+.footer-social-link:hover .icon,
+.footer-social-link:focus .icon {
+  fill: var(--white);
+}
 /*style for portfolio*
 /*title portfolio*/
 
@@ -501,12 +552,11 @@ main */
   color: var(--white);
   background: var(--akcent-color);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /*grid for servse list*/
 
-.list-service {
-  flex-wrap: wrap;
-}
 .list-service .item {
   width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
@@ -538,4 +588,12 @@ main */
 .list-service .text {
   font-size: 16px;
   line-height: 1.9;
+}
+
+/* Ховер и фокус для списка по сервису */
+
+.list-service .item:hover {
+  border: 1px solid var(--border-portfolio);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
