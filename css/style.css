@@ -456,9 +456,9 @@ main */
 
 /* ---------------колонка с соцсетями в футере----------------- */
 /*позиционирование списков соц сетей */
-.footer-social-container {
-  padding-top: 72px;
-  padding-bottom: 100px;
+.footer-flexbox {
+  display: flex;
+  align-items: baseline;
 }
 
 /* стили для заголовка футера*/
