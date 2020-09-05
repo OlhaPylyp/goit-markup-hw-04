@@ -407,6 +407,11 @@ main */
   fill: var(--akcent-color);
 }
 /*----------------footer---------------------------*/
+/*позиционирование двох дивов*/
+.footer-flexbox {
+  display: flex;
+  align-items: baseline;
+}
 
 .page-foter {
   background: var(--baner-bcg-color);
@@ -416,7 +421,7 @@ main */
 /* описываем контейнер контактов в футере, задаю верхний и нижний падинги*/
 .foter-container {
   padding: 60px 0;
-  margin-right: 82px;
+  margin-right: 70px;
 }
 .logo-foter {
   display: inline-block;
@@ -429,7 +434,6 @@ main */
   line-height: 1.2;
 }
 .asdress {
-  margin: 0;
   flex-direction: column;
 }
 .foter-container .footer-link {
@@ -455,11 +459,6 @@ main */
 }
 
 /* ---------------колонка с соцсетями в футере----------------- */
-/*позиционирование списков соц сетей */
-.footer-flexbox {
-  display: flex;
-  align-items: baseline;
-}
 
 /* стили для заголовка футера*/
 .footer-title {
