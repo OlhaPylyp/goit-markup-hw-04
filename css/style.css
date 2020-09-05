@@ -262,7 +262,6 @@ main */
   background-image: url(../image/clock.svg);
 }
 .icon-diagram::before {
-  width: 70px;
   padding: 25px 100px;
   background-image: url(../image/diagram.svg);
 }
